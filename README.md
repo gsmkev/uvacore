@@ -68,7 +68,7 @@ black src/ tests/
 Build the documentation locally (requires Sphinx):
 
 ```bash
-pip install -e ".[dev]"
+pip install ".[dev]"
 pip install -r docs/requirements.txt
 make -C docs html
 open docs/_build/html/index.html
