@@ -1,0 +1,70 @@
+/* Improve code block readability */
+div.highlight pre {
+  line-height: 1.45;
+  font-size: 0.95rem;
+  padding: 0.9rem 1rem;
+  border-radius: 6px;
+}
+
+/* Subtle background and border for code blocks */
+div.highlight {
+  background: #f5f7fa;
+  border: 1px solid #dfe3e8;
+  border-radius: 6px;
+}
+
+/* Make long code blocks horizontally scrollable without breaking layout */
+.wy-nav-content .highlight pre {
+  overflow-x: auto;
+}
+
+/* Better spacing for sections */
+.wy-nav-content .section {
+  margin-bottom: 2rem;
+}
+
+/* Improve table rendering */
+.wy-table-responsive table td, .wy-table-responsive table th {
+  white-space: normal;
+}
+
+/* Copy button visibility in code blocks */
+.copybtn {
+  opacity: 0.6;
+}
+.copybtn:hover {
+  opacity: 1;
+}
+
+/* Use full available width for the main content area */
+@media screen and (min-width: 1024px) {
+  .wy-nav-content {
+    max-width: none !important; /* override theme constraint */
+    width: 100%;
+  }
+}
+
+/* Increase contrast for inline code and literal spans */
+code, .rst-content tt, .rst-content code.literal {
+  color: #1f2937; /* dark slate */
+  background: #eef2f7;
+  border: 1px solid #d5dbe3;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}
+
+/* Increase contrast inside field lists and descriptions */
+dl.field-list code, .rst-content dl dt code {
+  color: #111827;
+}
+
+/* Improve emphasis for attributes rendered as literals */
+.rst-content .descclassname, .rst-content .descname {
+  color: #0f172a; /* very dark */
+}
+
+/* Make literals in definition lists more readable */
+.rst-content dl dd code {
+  color: #0b1220;
+}
+
